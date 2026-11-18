@@ -1,0 +1,15 @@
+{
+  "name": "who-knows-who-better",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Who Knows Who Better? — romantic two-player quiz game with Firebase multiplayer and Local Demo mode.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "python .test/test_game.py",
+    "emulators": "npx --yes firebase-tools emulators:start --project demo-who-knows-who-better --only auth,database",
+    "test:emulator": "node scripts/test-emulator.mjs"
+  },
+  "dependencies": {
+    "firebase": "^13.4.0"
+  }
+}
